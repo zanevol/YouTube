@@ -203,7 +203,7 @@ const search = event => {
 
 	setTimeout(() => {
 			document.querySelector('.search > input').value = '';			
-				}, 0);
+				}, 100);
 };
 
 const sliceTitle = (selector, count) => {
