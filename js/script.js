@@ -194,16 +194,13 @@ const searchItem = target => {
 
 			sliceTitle('.videos__item-descr', 90);
 			bindModal(document.querySelectorAll('.videos__item'));
+			document.querySelector('.search > input').value = '';
 		})
 };
 
 const search = event => {
 	event.preventDefault();
 	gapi.load('client', () => { searchItem(document.querySelector('.search > input').value) });
-
-	setTimeout(() => {
-			document.querySelector('.search > input').value = '';			
-				}, 100);
 };
 
 const sliceTitle = (selector, count) => {
