@@ -200,7 +200,7 @@ const searchItem = target => {
 const search = event => {
 	event.preventDefault();
 	gapi.load('client', () => { searchItem(document.querySelector('.search > input').value) });
-	document.querySelector('.search > input').value = '';
+// 	document.querySelector('.search > input').value = '';
 };
 
 const sliceTitle = (selector, count) => {
